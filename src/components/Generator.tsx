@@ -18,6 +18,7 @@ export default () => {
   const [controller, setController] = createSignal<AbortController>(null)
 
   onMount(() => {
+    const [currentSystemRoleSettings, setCurrentSystemRoleSettings] = createSignal('play a role named "扶苏",talk with me warmly');
     try {
       if (localStorage.getItem('messageList'))
         setMessageList(JSON.parse(localStorage.getItem('messageList')))
