@@ -53,7 +53,7 @@ export default () => {
       ...messageList(),
       {
         role: 'user',
-        content: inputValue2,
+        content: inputValue,
       },
     ])
     requestWithLatestMessage()
