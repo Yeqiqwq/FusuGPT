@@ -182,7 +182,7 @@ export default () => {
   return (
     <div my-6>
       <SystemRoleSettings
-        canEdit={() => messageList().length === 0}
+        canEdit={() => false}
         systemRoleEditing={systemRoleEditing}
         setSystemRoleEditing={setSystemRoleEditing}
         currentSystemRoleSettings={currentSystemRoleSettings}
