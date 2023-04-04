@@ -15,7 +15,7 @@ export default (props: Props) => {
   let systemInputRef: HTMLTextAreaElement
 
   const handleButtonClick = () => {
-    props.setCurrentSystemRoleSettings(systemInputRef.value + "在下面的对话中，请你假扮中国古代的人物：扶苏，并以温柔的语气和我对话")
+    props.setCurrentSystemRoleSettings(systemInputRef.value)
 
     props.setSystemRoleEditing(false)
   }
