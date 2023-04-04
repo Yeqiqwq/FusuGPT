@@ -40,7 +40,7 @@ export default () => {
   }
 
   const handleButtonClick = async() => {
-    const inputValue = inputRef.value
+    const inputValue = '用日语回复我' + inputRef.value
     if (!inputValue)
       return
 
@@ -52,7 +52,7 @@ export default () => {
       ...messageList(),
       {
         role: 'user',
-        content: '用日语回复我' + inputValue,
+        content: inputValue,
       },
     ])
     requestWithLatestMessage()
